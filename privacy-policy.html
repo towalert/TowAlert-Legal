@@ -16,17 +16,23 @@
 <body>
 
   <h1>Privacy Policy for TowAlert</h1>
-  <p class="date">Last updated: May 25, 2026</p>
+  <p class="date">Last updated: June 29, 2026</p>
 
   <h2>1. Information We Collect</h2>
   <p><strong>Account Information</strong><br>
   When you register, we collect your email address and display name to create and manage your account.</p>
 
   <p><strong>Location Data</strong><br>
-  If you enable "Use My Location," we access your device's GPS coordinates solely to show nearby incidents on the map. We do not store your location on our servers.</p>
+  If you enable "Use My Location," we access your device's GPS coordinates solely to show nearby incidents on the map. We do not store your location on our servers. Map functionality is powered by Google Maps, which may independently process location data per <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-  <p><strong>Push Notification Token</strong><br>
-  We collect your device's Expo push token to send you real-time traffic incident alerts. This token is stored on our servers and linked to your account.</p>
+  <p><strong>Push Notification Tokens</strong><br>
+  We collect your device's push notification token (FCM token on Android, APNs token on iOS) to send you real-time traffic incident alerts. This token is stored on our servers and linked to your account. It is deleted when you sign out or uninstall the app.</p>
+
+  <p><strong>Device Information</strong><br>
+  We collect basic device identifiers including device type and operating system version for the purpose of routing push notifications and diagnosing technical issues.</p>
+
+  <p><strong>IP Addresses</strong><br>
+  Our backend servers automatically log your IP address with each request. This data is used solely for security monitoring and is not linked to your profile.</p>
 
   <p><strong>Usage Data</strong><br>
   We collect basic app usage data (incident views, filter preferences) stored locally on your device via AsyncStorage. This data never leaves your device.</p>
@@ -37,6 +43,7 @@
     <li>To send you push notifications for nearby traffic incidents</li>
     <li>To display location-relevant content on the live map</li>
     <li>To manage your subscription status</li>
+    <li>To diagnose technical issues and monitor for abuse</li>
   </ul>
 
   <h2>3. Subscription &amp; Payments</h2>
@@ -46,6 +53,7 @@
   <p>We do not sell, trade, or share your personal information with third parties except:</p>
   <ul>
     <li><strong>Firebase (Google)</strong> — authentication and user management</li>
+    <li><strong>Google Maps</strong> — map rendering and location display</li>
     <li><strong>Render</strong> — backend hosting (incident data, push tokens)</li>
     <li><strong>Apple / Google</strong> — payment processing for subscriptions</li>
   </ul>
@@ -75,4 +83,3 @@
 
 </body>
 </html>
-
